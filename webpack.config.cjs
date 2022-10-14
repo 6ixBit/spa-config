@@ -12,7 +12,6 @@ module.exports = {
         compress: true,
         open: true,
         port: 1337,
-        host: '127.0.0.1',
         https: true,
         historyApiFallback: true,
         hot: true,
@@ -32,7 +31,7 @@ module.exports = {
         ],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.tsx', '.ts', '.js', '.jsx'],
     },
     output: {
         filename: '[name].js',
@@ -44,7 +43,5 @@ module.exports = {
             template: path.resolve(__dirname, 'index.html'),
             filename: 'index.html'
         }),
-        // new BundleAnalyzerPlugin()
-
     ]
 };
